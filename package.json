@@ -2,13 +2,13 @@
   "name": "pec1",
   "version": "1.0.0",
   "description": "",
-  "main": "portada.html",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
-    "parcel:dev": "parcel portada.html",
-    "parcel:build": "parcel build portada.html",
+    "parcel:dev": "parcel index.html",
+    "parcel:build": "parcel build index.html",
     "clean": "rimraf dist .cache .cache-loader"
   },
   "keywords": [],

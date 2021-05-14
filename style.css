@@ -21,6 +21,7 @@ html {
 
 .logotipo {
     width: 25%;
+    padding-left: 20px;
 }
 
 .div-nav {
@@ -101,6 +102,7 @@ html {
     }
     .logotipo {
         width: 100%;
+        padding: 0;
     }
     
     .div-nav {
@@ -116,16 +118,17 @@ html {
 
     #nav ul {
         margin: 0;
-        padding: 0;
+        padding: 10px;
     }
 }
 
-@media screen and (min-width: 639px) and (max-width: 1279px) {
+@media screen and (min-width: 639px) and (max-width: 900px) {
 	.centro {
 		flex-direction: column;
     }
     .logotipo {
         width: 100%;
+        padding: 10px;
     }
     
     .div-nav {
@@ -136,7 +139,7 @@ html {
     }
 
     .center {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     #nav ul {
@@ -154,6 +157,10 @@ html {
 .imagen {
     width: 100%;
     height: auto;
+}
+
+.clip-polygon {
+    clip-path: polygon(22% 32%, 29% 8%, 54% 28%, 100% 0, 93% 81%, 49% 96%, 11% 100%, 0% 70%, 0% 35%, 11% 13%);
 }
 
 .container {
@@ -217,6 +224,24 @@ html {
     }
 }
 
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+.animacion {
+    animation: bounceIn infinite 3s;
+}
+
 .receta {
     background-color: lightblue;
     font-size: 2rem;
@@ -227,6 +252,66 @@ html {
 .destacada-img {
     width: 100%;
     height: auto;
+}
+
+.container-detalle {
+    display: flex;
+    width: 100%;
+}
+
+.container-lista {
+    width: 30%;
+}
+
+.container-imagenes {
+    width: 70%;
+    display: flex;
+    
+}
+
+.img-detalle {
+    padding: 15px;
+    
+}
+
+@media screen and (max-width: 639px) {
+    .container-detalle {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-lista {
+        width: 100%;
+    }
+    
+    .container-imagenes {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .img-detalle {
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 639px) and (max-width: 900px) {
+    .container-detalle {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-lista {
+        width: 100%;
+    }
+    
+    .container-imagenes {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .img-detalle {
+        padding: 5px;
+    }
 }
 
 .cursiva {

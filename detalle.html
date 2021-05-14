@@ -6,23 +6,28 @@
         <title>Detalle</title>
       </head>
 <body id="portada-body">
-  <header>
-    <div id="centro">
-      <nav>
-          <ul id="nav">
-              <li><a class="link_nav" href="categoria.html">Categoría</a></li>
-              <li>|</li>
-              <li><a class="link_nav" href="presentacion.html">Presentación</a></li>
-              <li>|</li>
-              <li><a class="link_nav" href="enlaces.html">Enlaces</a></li>
-          </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <div class="centro">
+          <img class="logotipo" src="logotipo.svg" alt="Logotipo de Overcooked">
+          <div class="div-nav">
+            <p class="center" >Recetas para niños</p>
+          </div>
+        </div>
+    </header>
 
     <article class="receta">
         <h1 class="center" >Estofado de carne con patatas</h1>
         <p>10 Abril 2021</p>
+        
+            <img class="destacada-img" src="estofado-extra.jpg"
+                srcset="
+                estofado-mobile.jpg 480w,
+                estofado-little.jpg 640w,
+                estofado-medium.jpg 1280w,
+                estofado-large.jpg 1920w"
+                sizes="90vw"
+            alt="A very exciting yacht race.">
+        
         <p>Este plato es muy sencillo de hacer y requiere de poco tiempo de preparación, aunque el tiempo de ejecución es de unos 70 minutos. Por suerte casi todo el tiempo es la Thermomix la que hace todo el trabajo autónomamente. Es un plato que los niños pueden hacer perfectamente con muy poca ayuda y les encantan las patatas estofadas.</p>
         <ul class="cursiva">
             <li>150 g de cebolla</li>
@@ -64,6 +69,21 @@
 
 
     </article>
+
+    <footer class="pie">
+        <div class="centro">
+          <img class="logotipo" src="logotipo.svg" alt="Logotipo de Overcooked">
+          <div class="div-nav">
+            <nav>
+                <ul id="nav">
+                    <li><a class="link_nav" href="categoria.html">Categoría</a></li>
+                    <li><a class="link_nav" href="presentacion.html">Presentación</a></li>
+                    <li><a class="link_nav" href="enlaces.html">Enlaces</a></li>
+                </ul>
+            </nav>
+          </div>
+        </div>
+      </footer>
 
     <script src="./index.js"></script>
 </body>
